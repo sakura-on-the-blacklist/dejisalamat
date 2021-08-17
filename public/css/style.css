@@ -1,0 +1,108 @@
+@font-face {
+    src: url(../meiryo.ttc);
+    font-family: font;
+  }
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: font;
+}
+html{
+    position:relative;
+    min-height: 100%;
+}
+
+header{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.img {
+     width: 150px;
+     max-width: 100%;
+}
+
+img {
+    width: 150px;
+    max-width: 100%;
+}
+nav a {
+    text-decoration: none;
+    color: rgb(121, 120, 120) ;
+}
+
+nav li {
+    list-style: none;
+    padding: 0.4em 1em;
+}
+
+nav ul {
+    display: flex;
+
+}
+
+footer {
+    background-color: rgb(23, 28, 65);
+    display: flex;
+    flex-direction: column;
+    color: rgb(255, 255, 255);
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    bottom:0;
+    width: 100%;
+    
+  }
+  .big{
+      font-size: 2em;
+  }
+  
+  footer img {
+    width: 150px;
+    max-width: 100%;
+  }
+  
+  footer li:nth-child(1) ul {
+    width: 150px;
+    max-width: 100%;
+  }
+  
+  footer li {
+    list-style: none;
+  }
+  
+  footer a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: 0.9em;
+    padding: 0 0.5em;
+  }
+  
+  footer ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  footer li:nth-child(2) ul {
+    display: flex;
+    flex-direction: row;
+    padding: 0em 0.7em;
+  }
+  
+  footer li:nth-child(3) {
+    display: flex;
+  }
+  
+  footer li:nth-child(3) > div {
+    padding: 0.4em 0.6em;
+  }
+  
+  footer li:nth-child(5) {
+    padding-bottom: 0.5em;
+  }
