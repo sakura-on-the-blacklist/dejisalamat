@@ -14,15 +14,14 @@ class CreateCommnetsTable extends Migration
     public function up()
     {
         Schema::create('commnets', function (Blueprint $table) {
-            $table->increments('id');
+            $table->id();
             $table->integer('rank');
             $table->text('text');
-            $table->integer('user_id');
-            $table->integer('event_id');
-            $table->timestamps('created_at');
-            $table->timestamps('updated_at');
-            $table->primary('id');
+            $table->unsignedBigInteger('user_id');
+            $table->unsignedBigInteger('event_id');
+            $table->timestamps();
             $table->foreign('user_id')->references('id')->on('users');
+            $table->foreign('event_id')->references('id')->on('events');
         });
     }
 

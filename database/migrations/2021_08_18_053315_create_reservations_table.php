@@ -14,19 +14,17 @@ class CreateReservationsTable extends Migration
     public function up()
     {
         Schema::create('reservations', function (Blueprint $table) {
-            $table->increments('id');
+            $table->id();
             $table->string('name');
             $table->string('Number_of_people');
             $table->string('tel');
-            $table->integer('event_id');
-            $table->integer('user_id');
-            $table->timestamps('created_at');
-            $table->timestamps('updated_at');
-            $table->integer('schedule_id');
-            $table->primary('id');
+            $table->unsignedBigInteger('event_id');
+            $table->unsignedBigInteger('user_id');
+            $table->timestamps();
+            $table->unsignedBigInteger('schedule_id');
             $table->foreign('event_id')->references('id')->on('events');
             $table->foreign('user_id')->references('id')->on('users');
-            $table->foreign('schedule_id')->references('id')->on('schedules');
+            // $table->foreign('schedule_id')->references('id')->on('schedules');
         });
     }
 
