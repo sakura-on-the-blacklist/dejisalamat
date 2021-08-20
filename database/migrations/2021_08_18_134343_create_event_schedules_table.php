@@ -15,8 +15,10 @@ class CreateEventSchedulesTable extends Migration
     {
         Schema::create('event_schedules', function (Blueprint $table) {
             $table->id();
-            $table->time('event_id');
-            $table->time('schedule_id');
+            $table->unsignedBigInteger('event_id');
+            $table->foreign('event_id')->references('id')->on('events');
+            $table->unsignedBigInteger('schedule_id');
+            $table->foreign('schedule_id')->references('id')->on('schedules');
             $table->timestamps();
         });
     }
