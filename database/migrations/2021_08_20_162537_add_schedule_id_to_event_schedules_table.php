@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateSchedulesTable extends Migration
+class AddScheduleIdToEventSchedulesTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,10 +13,8 @@ class CreateSchedulesTable extends Migration
      */
     public function up()
     {
-        Schema::create('schedules', function (Blueprint $table) {
-            $table->id();
-            $table->string('time');
-            $table->timestamps('');
+        Schema::table('event_schedules', function (Blueprint $table) {
+                        $table->foreign('schedule_id')->references('id')->on('schedules');
         });
     }
 
@@ -27,6 +25,8 @@ class CreateSchedulesTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('schedules');
+        Schema::table('event_schedules', function (Blueprint $table) {
+            //
+        });
     }
 }

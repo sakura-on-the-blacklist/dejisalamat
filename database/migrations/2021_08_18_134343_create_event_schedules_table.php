@@ -18,7 +18,7 @@ class CreateEventSchedulesTable extends Migration
             $table->unsignedBigInteger('event_id');
             $table->foreign('event_id')->references('id')->on('events');
             $table->unsignedBigInteger('schedule_id');
-            $table->foreign('schedule_id')->references('id')->on('schedules');
+            // $table->foreign('schedule_id')->references('id')->on('schedules');
             $table->timestamps();
         });
     }
