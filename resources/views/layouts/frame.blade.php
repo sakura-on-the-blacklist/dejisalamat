@@ -36,7 +36,7 @@
           <div>会社概要</div>
           <div>プライバシーポリシー</div>
         </li>
-        <li><p class="big">株式会社Bチーム</p></li>
+        <li><p class="big-letter">株式会社Bチーム</p></li>
         <li>＠TEAM-B 4th class members 2021</li>
       </ul>
     </footer>
