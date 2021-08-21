@@ -18,10 +18,10 @@ class CreateEventsTable extends Migration
             $table->integer('country_id');
             $table->string('title');
             $table->string('place');
-            $table->string('price');
+            $table->text('price');
             $table->string('explanation');
             $table->timestamps();
-            $table->dateTime('deleted_at');
+            $table->dateTime('deleted_at')->nullable();
         });
     }
 
