@@ -18,26 +18,28 @@
         <div class="Form">
         </div>
         <div class="Form-Item">
-            <p class="Form-Item-Label"><span class="Form-Item-Label-Required">必須</span>氏名</p>
-            <input type="name" class="Form-Item-Input" placeholder="例）山田太郎">
+            <p class="Form-Item-Label">お名前</p>
+            <input type="name" class="Form-Item-Input" >
         </div>
         <br>
         <br>
 
         <div class="Form-Item">
-            <p class="Form-Item-Label"><span class="Form-Item-Label-Required">必須</span>電話番号</p>
-            <input type="tel" class="Form-Item-Input" placeholder="例）000-0000-0000">
+            <p class="Form-Item-Label">電話番号</p>
+            <input type="tel" class="Form-Item-Input" >
         </div>
         <br>
         <br>
         <div class="Form-Item">
-            <p class="Form-Item-Label"><span class="Form-Item-Label-Required">必須</span>予約プラン名</p>
-            <input type="reserve" class="Form-Item-Input" placeholder="例）琉球ガラス体験">
+            <p class="Form-Item-Label">予約プラン名</p>
+            <input type="reserve" class="Form-Item-Input" >
         </div>
         <br>
         <br>
         <div class="Form-Item">
-            <p class="Form-Item-Label"><span class="Form-Item-Label-Required">必須</span>希望日時</p>
+            <p class="Form-Item-Label">
+                希望日時
+            </p>
             <div class="Form-Item-Input1">
                 <input type="text" class="Form-Item-Input" placeholder="第一希望">
                 <input type="text" class="Form-Item-Input" placeholder="第二希望">
@@ -48,8 +50,8 @@
         <br>
 
         <div class="Form-Item">
-            <p class="Form-Item-Label isMsg"><span class="Form-Item-Label-Required">必須</span>人数</p>
-            <input type="people" class="Form-Item-Input" placeholder="例）5名">
+            <p class="Form-Item-Label isMsg">人数</p>
+            <input type="people" class="Form-Item-Input">
         </div>
         <br>
         <br>
