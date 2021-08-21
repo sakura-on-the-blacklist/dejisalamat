@@ -19,6 +19,10 @@ Route::get('/', function () {
 Route::get('/philippines', function () {
     return view('events.philippines');
 });
+Route::get('/okinawa', function () {
+    return view('events.okinawa');
+});
+
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
