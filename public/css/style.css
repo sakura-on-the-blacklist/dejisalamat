@@ -1,15 +1,3 @@
-@charset "utf-8";
-
-* {
-  margin: 0;
-  padding: 0;
-}
-
-.main-visual {
-  background-color: aqua;
-  color: black;
-}
-
 @font-face {
   src: url(/meiryo.ttc);
   font-family: font;
@@ -255,9 +243,9 @@ footer {
     color: rgb(255, 255, 255);
     align-items: center;
     justify-content: center;
-    position: absolute;
+    /* position: absolute;
     bottom: 0;
-    width: 100%;
+    width: 100%; */
   }
 
 footer img {
@@ -462,3 +450,52 @@ footer li:nth-child(5) {
     font-size: 16px;
   }
 }
+
+/* topはじまり */
+.main-visual img {
+  width: 100vw;
+}
+
+.info {
+  background-image: url(../img/topB.png);
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  padding: 30px 50px;
+  display: block;
+  height: auto;
+}
+
+.info1 {
+  width: 100%;
+  height: auto;
+}
+
+.info2 {
+  background-color:rgba(255,255,255,0.9);
+  width: 90%;
+  height: auto;
+  margin-bottom: 50px;
+  margin-right: auto;
+  margin-left : auto;
+  font-weight: bold;
+}
+
+.info2 ul {
+  list-style: none;
+}
+
+.info3 {
+  width: 90%;
+  margin-right: auto;
+  margin-left : auto;
+}
+
+.info3 > a > img {
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+.info3 img:hover {
+  opacity: 0.8;
+}
+/* topおわり */
