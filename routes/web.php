@@ -27,6 +27,11 @@ Route::get('/reserve', function () {
     return view('reservations.reserve');
 });
 
+Route::get('/loginn', function () {
+    return view('login');
+});
+
+
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
