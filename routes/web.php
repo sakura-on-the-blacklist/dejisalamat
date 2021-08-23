@@ -26,6 +26,9 @@ Route::get('/okinawa', function () {
 Route::get('/reserve', function () {
     return view('reservations.reserve');
 });
+Route::get('/detail', function () {
+    return view('details.detail');
+});
 
 Auth::routes();
 
