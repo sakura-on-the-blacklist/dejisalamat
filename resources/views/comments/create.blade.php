@@ -9,7 +9,9 @@
     <title>Document</title>
 </head>
 <body>
-       <form action="#" method="POST">
+
+       <form action="{{ route('comment.store',$event->id)}}"  method="POST">
+        @csrf
         <h5>みんなの口コミ</h5>
         <div class="center">
             <div class="box1">
@@ -23,7 +25,6 @@
                     </div>
                     <div class="star">
                         <label>満足度</label>
-                        <input type="hidden" name="rank">
                         <div class="rating">
                             <input class="rating__input hidden--visually" type="radio" id="5-star" name="rating" value="5" required />
                             <label class="rating__label" for="5-star" title="星5つ"><span class="rating__icon" aria-hidden="true"></span><span class="hidden--visually">星5つ</span></label>
@@ -38,12 +39,12 @@
                           </div>
                     <div class="text-card">
                         <div>口コミ本文</div>
-                        <textarea class="text-review" placeholder="" cols="30" rows="10"></textarea>
+                        <textarea class="text-review" name="text" cols="30" rows="10"></textarea>
                     </div>
                       <div class="space2">
                           <p class="size1">※投稿すると会員登録時に設定されたお名前が表示されます</p>
                       <div class="button02">
-                          <a href="#">投稿する</a>
+                          <input type="submit" value="投稿する">
                       </div>
                     </div>
            </form>

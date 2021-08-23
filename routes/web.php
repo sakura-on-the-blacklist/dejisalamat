@@ -22,3 +22,5 @@ Auth::routes();
 Route::get('/home', 'HomeController@index')->name('home');
 
 Route::get('/events/{event}/comments/create','CommentController@create')->name('comment.create');
+
+Route::post('/events/{event}/comments','CommentController@store')->name('comment.store');
