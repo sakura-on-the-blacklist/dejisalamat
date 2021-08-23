@@ -26,8 +26,12 @@ Route::get('/okinawa', function () {
 Route::get('/reserve', function () {
     return view('reservations.reserve');
 });
+Route::get('/event_details', function () {
+    return view('event_details');
+});
 
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 
+Route::get('/events/{event}', 'Details@show')->name('events.show');
