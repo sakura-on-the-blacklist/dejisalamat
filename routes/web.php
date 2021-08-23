@@ -16,9 +16,21 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+Route::get('/philippines', function () {
+    return view('events.philippines');
+});
+Route::get('/okinawa', function () {
+    return view('events.okinawa');
+});
+
+Route::get('/reserve', function () {
+    return view('reservations.reserve');
+});
 
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 
+
 Route::get('/events/{event}/comments/create','CommentController@create')->name('comment.create');
+
