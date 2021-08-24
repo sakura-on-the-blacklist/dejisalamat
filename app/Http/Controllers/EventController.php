@@ -8,15 +8,12 @@ use App\Event;
 
 class EventController extends Controller
 {
-    // function show($id)
-    // {
-    //     $philippine = Event::find($id);
-    //     return view('philippines.show',['philippine' => $philippine]);
 
-    //     $okinawa = Event::find($id);
-    //     return view('okinawas.show',['okinawa' => $okinawa]);
-    // }
+    function show($event_id)
+    {
+        $event = Event::find($event_id);
 
-
+        return view('events.show', ['event' => $event]);
+    }
 
 }
