@@ -12,3 +12,10 @@ function carousel() {
   x[slideIndex-1].style.display = "block";
   setTimeout(carousel, 4000); // Change image every 2 seconds
 }
+
+const hamburgerToggle = document.querySelector('.hamburger')
+const navUl = document.querySelector('.nav-ul')
+
+hamburgerToggle.addEventListener('click', function(){
+  navUl.classList.toggle('hidden')
+})
