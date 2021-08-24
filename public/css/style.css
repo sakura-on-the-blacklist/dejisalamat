@@ -16,6 +16,7 @@
 }
 html {
   position: relative;
+  /* min-height: 315%; */
   overflow-x: hidden;
 }
 
@@ -262,6 +263,9 @@ footer {
     color: rgb(255, 255, 255);
     align-items: center;
     justify-content: center;
+    /* position: absolute;
+    bottom: 0;
+    width: 100%; */
     /* bottom: 0;
     margin-top: 5em;
     width: 100vw; */
@@ -535,9 +539,6 @@ footer li:nth-child(5) {
   .box3 h2 {
     margin-top: 1em;
   }
-}
-
-
 
 /* 予約ページ */
 
@@ -694,6 +695,10 @@ footer li:nth-child(5) {
   }
 }
 
+/* contactはじまり */
+.contactform {
+  background-image: url(../img/contact.png);
+
 /* topはじまり */
 .main-visual img {
   width: 100vw;
@@ -705,6 +710,88 @@ footer li:nth-child(5) {
   background-repeat: no-repeat;
   padding: 30px 50px;
   display: block;
+  margin-left: auto;
+  margin-right: auto;
+  height: 800px;
+}
+
+.conatactdl {
+  background-color:rgba(255,255,255,0.5);
+  margin-top: 100px;
+}
+
+.contactform dl {
+  width: 80%;
+  margin-right: auto;
+  margin-left : auto;
+}
+
+.contactform .icon {
+  font-size: xx-large;
+  font-family: 'Kaisei Opti', serif;
+  text-align: center;
+}
+
+.contactform dt {
+  width: 165px;
+  padding: 10px 0;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+.contactform .name {
+  width: 240px;
+  height: 30px;
+}
+.contactform .email {
+  width: 100%;
+  height: 30px;
+}
+.contactform .message {
+  width: 100%;
+  height: 150px;
+  font-size: 20px;
+}
+
+@media screen and (min-width:768px){
+  .contactform .email {
+    width: 300px;
+    height: 30px;
+  }
+  .contactform .message {
+    height: 150px;
+  }
+}
+
+button {
+  background-color: tomato;
+  color: #fff;
+  font-size: 20px;
+  width: 100px;
+  display: block;
+  text-align: center;
+  /* line-height: 50px; */
+  border-radius: 5px;
+  border: 3px solid tomato;
+  margin:0 0 0 auto
+}
+
+button:hover {
+  background-color: #fff;
+  color: #004aad;
+  cursor: pointer;
+}
+
+.required:after {
+  content: "*";
+  color: tomato;
+}
+
+.attention {
+  font-size: x-small;
+}
+/* contactおわり */
+=======
   height: auto;
 }
 

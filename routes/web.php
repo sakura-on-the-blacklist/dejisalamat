@@ -38,6 +38,10 @@ Route::get('/top', function () {
     return view('top');
 });
 
+Route::get('/contact', function () {
+    return view('contact');
+});
+
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
