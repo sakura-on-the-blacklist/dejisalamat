@@ -5,7 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Event;
 
-class DetailsController extends Controller
+class EventController extends Controller
 {
     function show($event_id)
     {
