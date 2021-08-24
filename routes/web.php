@@ -23,11 +23,13 @@ Route::get('/okinawa', function () {
     return view('events.okinawa');
 });
 
-Route::get('/reserve', function () {
-    return view('reservations.reserve');
+Route::get('/reservations/create', function () {
+    return view('reservations.create');
 });
 
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+Route::post('/reservations', 'ReservationsController@store')->name('reservations.store');
+
 
