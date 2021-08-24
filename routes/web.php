@@ -16,15 +16,26 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
-Route::get('/philippines', function () {
-    return view('events.philippines');
+
+Route::get('/reserve', function () {
+    return view('reservations.reserve');
 });
-Route::get('/okinawa', function () {
-    return view('events.okinawa');
+Route::get('/detail', function () {
+    return view('details.detail');
+});
+Route::get('/login', function () {
+    return view('logins.login');
 });
 
 Route::get('/reserve', function () {
     return view('reservations.reserve');
+});
+Route::get('/show', function () {
+    return view('events.show');
+});
+
+Route::get('/top', function () {
+    return view('top');
 });
 
 Route::get('/contact', function () {
@@ -34,4 +45,15 @@ Route::get('/contact', function () {
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+Route::get('/philippines/{philippine}', 'EventController@show')->name('philippines.show');
+
+Route::get('/okinawa', 'OkinawaController@index')->name('okinawa.index');
+
+Route::get('/events/{event}', 'EventController@show')->name('events.show');
+
+Route::get('/events/{event}/comments/create','CommentController@create')->name('comment.create');
+
+Route::post('/events/{event}/comments','CommentController@store')->name('comment.store');
+
 
