@@ -36,7 +36,6 @@ Route::get('/home', 'HomeController@index')->name('home');
 
 Route::get('/events/{event}', 'EventController@show')->name('events.show');
 
-
 Route::get('/events/{event}/comments/create','CommentController@create')->name('comment.create');
 
 Route::post('/events/{event}/comments','CommentController@store')->name('comment.store');
