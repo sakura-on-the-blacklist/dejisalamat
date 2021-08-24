@@ -256,16 +256,16 @@ main a img {
 }
 
 footer {
-  background-color: rgb(23, 28, 65);
-  display: flex;
-  flex-direction: column;
-  color: rgb(255, 255, 255);
-  align-items: center;
-  justify-content: center;
-  bottom: 0;
-  margin-top: 5em;
-  width: 100vw;
-}
+    background-color: rgb(23, 28, 65);
+    display: flex;
+    flex-direction: column;
+    color: rgb(255, 255, 255);
+    align-items: center;
+    justify-content: center;
+    /* bottom: 0;
+    margin-top: 5em;
+    width: 100vw; */
+  }
 
 footer img {
   width: 150px;
@@ -693,3 +693,52 @@ footer li:nth-child(5) {
     font-size: 16px;
   }
 }
+
+/* topはじまり */
+.main-visual img {
+  width: 100vw;
+}
+
+.info {
+  background-image: url(../img/topB.png);
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  padding: 30px 50px;
+  display: block;
+  height: auto;
+}
+
+.info1 {
+  width: 100%;
+  height: auto;
+}
+
+.info2 {
+  background-color:rgba(255,255,255,0.9);
+  width: 90%;
+  height: auto;
+  margin-bottom: 50px;
+  margin-right: auto;
+  margin-left : auto;
+  font-weight: bold;
+}
+
+.info2 ul {
+  list-style: none;
+}
+
+.info3 {
+  width: 90%;
+  margin-right: auto;
+  margin-left : auto;
+}
+
+.info3 > a > img {
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+.info3 img:hover {
+  opacity: 0.8;
+}
+/* topおわり */
