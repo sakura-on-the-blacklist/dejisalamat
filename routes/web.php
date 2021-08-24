@@ -37,9 +37,10 @@ Route::get('/show', function () {
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
-Route::get('/philippines/{philippine}', 'EventController@show')->name('philippines.show');
-Route::get('/okinawa', 'OkinawaController@index')->name('okinawa.index');
 
+Route::get('/philippines/{philippine}', 'EventController@show')->name('philippines.show');
+
+Route::get('/okinawa', 'OkinawaController@index')->name('okinawa.index');
 
 Route::get('/events/{event}', 'EventController@show')->name('events.show');
 
