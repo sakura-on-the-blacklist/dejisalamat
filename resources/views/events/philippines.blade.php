@@ -55,11 +55,12 @@
     <div class="etitlemom">
         <h2 class="etitle">イベント情報</h2>
     </div>
+    @foreach ($philippines as $philippine)
     <div class="big">
       <div class="info">
         <div class="imgholder"><img src="/img/PE2-1.JPG" alt="" /></div>
         <div class="schedule">
-          <p><a href="#"> ロケーション１</a></p>
+          <p><a href="{{ route('philippines.show', $philippine->id) }}">{{$philippine->title}}</a></p>
           <ul>
             <li>time1</li>
             <li>time2</li>
@@ -67,37 +68,7 @@
           </ul>
           <div class="location">場所:</div>
         </div>  
-    </div>
+    </div> 
    </div>
-   <div class="grandbig">
-    <div class="big">
-      <div class="info">
-        <div class="imgholder"><img src="/img/PE2-2.JPG" alt="" /></div>
-        <div class="schedule">
-          <p><a href="#"> ロケーション2</a></p>
-          <ul>
-            <li>time1</li>
-            <li>time2</li>
-            <li>time3</li>
-          </ul>
-          <div class="location">場所:</div>
-        </div>  
-    </div>
-   </div>
-   <div class="grandbig">
-    <div class="big">
-      <div class="info">
-        <div class="imgholder"><img src="/img/PE2-3.JPG" alt="" /></div>
-        <div class="schedule">
-          <p><a href="#">ロケーション3</a></p>
-          <ul>
-            <li>time1</li>
-            <li>time2</li>
-            <li>time3</li>
-          </ul>
-          <div class="location">場所:</div>
-        </div>  
-    </div>
-   </div>
-
+   @endforeach
    @endsection
