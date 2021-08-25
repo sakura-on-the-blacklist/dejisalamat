@@ -6,5 +6,9 @@ use Illuminate\Database\Eloquent\Model;
 
 class Event extends Model
 {
-    //
+    function comment_ranks()
+    {
+        return $this->belongsToMany(('App\Comment\commnet_ranks'))
+                    ->pluck('rank');
+    }
 }
