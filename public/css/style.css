@@ -452,39 +452,43 @@ footer li:nth-child(5) {
 }
 
 /* loginはじまり */
-#login {
+.col-md-8 {
   margin: 2em;
 }
 
-#login h2 {
+.col-md-8 h2 {
   font-family: 'Kaisei Opti', serif;
   margin-bottom: 10px;
 }
 
-#login .loginform h2 {
+.card-header {
+  font-family: 'Kaisei Opti', serif;
+  margin-bottom: 10px;
+  font-size: 25px;
   color: #fff;
 }
 
-.loginform {
+.col-md-8 .card {
   background-image: url(../img/login1.png);
   background-size: 100% auto;
   background-repeat: no-repeat;
 }
 
 @media screen and (min-width:768px){
-  .loginform {
+  .col-md-8 .card {
     background-image: url(../img/login.png);
     background-size: 100% auto;
     background-repeat: no-repeat;
   }
 }
 
-#login dt {
+.form-group {
   font-weight: bold;
   margin-top: 11px;
+  color: #fff;
 }
 
-#login input {
+.form-control {
   width: 300px;
   box-sizing: border-box;
   padding: .8em;
@@ -493,16 +497,16 @@ footer li:nth-child(5) {
   outline: none;
 }
 
-.loginform textarea {
+/* .loginform textarea {
   width: 300px;
   box-sizing: border-box;
   margin: 1em 0;
   padding: .8em;
   border-radius: 1em;
   border: 2px solid #aaa;
-}
+} */
 
-#login button {
+.col-md-8 button {
   margin-left: 335px;
 }
 
@@ -520,7 +524,7 @@ footer li:nth-child(5) {
   }
 }
 
-#login .attention {
+.col-md-8 .attention {
   color: black;
 }
 /* loginおわり */
