@@ -9,6 +9,6 @@ class Event extends Model
     //
     function event_schedules()
     {
-        return $this->hasMany('App\EventSchedule');
+        return $this->belongsToMany('App\Schedule', 'event_schedules');
     }
 }
