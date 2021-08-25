@@ -2,7 +2,6 @@
 @section('content')
 <section>
     <div class="contactform">
-      <form class="conatactdl">
         <dl>
           <h1 class="icon">お問い合わせ</h1>
           <form action="{{ route('contact.store',$event->id)}}" method="POST">
@@ -18,7 +17,6 @@
             <p>※「<span class="required"></span>」とついている項目は必須項目です。<br>※お問い合わせ送信後、2営業日以内に担当者よりご連絡いたします。</p>
           </form>
         </div>
-      </form>
     </div>
   </section>
 @endsection

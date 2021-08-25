@@ -16,11 +16,11 @@ class ContactController extends Controller
         $contact = new Contact();
 
         $contact -> name = $request -> name;
-        $contact -> mail = $request -> mail;
+        $contact -> mail = $request -> email;
         $contact -> content = $request -> message;
 
         $contact -> save();
 
-        return redirect()->route('contact.create');
+        return view('contact.create');
     }
 }
