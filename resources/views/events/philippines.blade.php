@@ -55,18 +55,19 @@
     <div class="etitlemom">
         <h2 class="etitle">イベント情報</h2>
     </div>
+
     @foreach ($philippines as $philippine)
     <div class="big">
       <div class="info">
         <div class="imgholder"><img src="/img/PE2-1.JPG" alt="" /></div>
         <div class="schedule">
-          <p><a href="{{ route('philippines.show', $philippine->id) }}">{{$philippine->title}}</a></p>
+          <p><a href="{{ route('philippines.index', $philippines->id) }}">{{$philippines->title}}</a></p>
           <ul>
-            <li>time1</li>
-            <li>time2</li>
-            <li>time3</li>
+            @foreach ($philippines->schedules as $schedule)
+              <li>{{$schedule->time}}</li>
+            @endforeach
           </ul>
-          <div class="location">場所:</div>
+          <div class="location">場所:{{$philippines->place}}</div>
         </div>  
     </div> 
    </div>
