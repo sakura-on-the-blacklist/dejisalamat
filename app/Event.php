@@ -11,9 +11,8 @@ class Event extends Model
     {
         return $this->hasMany('App\Comment’)
                     ->pluck('rank');
-
     }
-    
+
     function schedules()
     {
         return $this->belongsToMany('App\Schedule', 'event_schedules');
