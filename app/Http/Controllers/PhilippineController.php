@@ -10,8 +10,8 @@ class PhilippineController extends Controller
     function index()
     {
         $philippines = Event::where('country_id', 2) ->get();
-        return view('events.philippines',['philippines' => $philippines]);
        
+        return view('events.philippines',['philippines' => $philippines]);
 
     }
 
