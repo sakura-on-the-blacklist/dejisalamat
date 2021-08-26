@@ -63,6 +63,12 @@
         <li>{{$okinawa->time}}</li>
       </ul>
       <div class="location">場所:</div>
+
+        @foreach ($okinawa->schedules as $schedule)
+          <li>{{$schedule->time}}</li>
+        @endforeach
+      </ul>
+      <div class="location">場所:{{$okinawa->place}}</div>
     </div>  
 </div>
 </div>

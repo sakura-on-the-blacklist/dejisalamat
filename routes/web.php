@@ -50,6 +50,9 @@ Route::post('/reservations', 'ReservationsController@store')->name('reservations
 
 Route::get('/philippines/{philippine}', 'EventController@show')->name('philippines.show');
 
+
+Route::get('/philippines', 'PhilippineController@index')->name('philippines.index');
+
 Route::get('/okinawa', 'OkinawaController@index')->name('okinawa.index');
 
 Route::get('/events/{event}', 'EventController@show')->name('events.show');
@@ -57,5 +60,4 @@ Route::get('/events/{event}', 'EventController@show')->name('events.show');
 Route::get('/events/{event}/comments/create','CommentController@create')->name('comment.create');
 
 Route::post('/events/{event}/comments','CommentController@store')->name('comment.store');
-
 

@@ -14,8 +14,6 @@ class OkinawaController extends Controller
         $okinawa = Event::where('country_id', 1) ->get();
        
         return view('events.okinawa',['okinawa' => $okinawa]);
- 
-
     }
 
 }
