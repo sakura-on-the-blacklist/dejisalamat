@@ -78,6 +78,8 @@
                         <dd><input type="email" name="email" class="email" required></dd>
                         <dt><span class="required">パスワード</span></dt>
                         <dd><input type="password" name="password" class="name" required></dd>
+                        <dt><span class="required">パスワード確認</span></dt>
+                        <dd><input type="password" name="password_confirmation" class="name" required></dd>
                     </dl>
                     <button type="submit" class="btn">登録する</button>
                     <div class="attention">
