@@ -9,10 +9,9 @@ use App\Event;
 class EventController extends Controller
 {
 
-    function show($event_id,$id)
+    function show($event_id)
     {
         $event = Event::find($event_id);
-        $event = Event::find($id);
         $ratings = $event->comment_ranks();
 
         $sum = 0;
