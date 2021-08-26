@@ -46,7 +46,7 @@
     <main>
       <img src="img/pmap.png" alt="" />
       <a href="#THTH"><img src="img/drawing-pin-1.png" alt="" class="pin-1" /></a>
-      <a href="#OPOP"><img src="img/drawing-pin-1.png" alt="" class="pin-2" /></a>
+      <a href="#THTH"><img src="img/drawing-pin-1.png" alt="" class="pin-2" /></a>
       <a href="#THTH"><img src="img/drawing-pin-1.png" alt="" class="pin-3" /></a>
       <a href="#THTH"><img src="img/drawing-pin-1.png" alt="" class="pin-4" /></a>
       <a href="#THTH"><img src="img/drawing-pin-1.png" alt="" class="pin-5" /></a>

@@ -42,26 +42,26 @@
 
 <main>
   <img src="img/omap.png" alt="" />
-  <a href=""><img src="img/drawing-pin-1.png" alt="" class="opin-1" /></a>
-  <a href=""><img src="img/drawing-pin-1.png" alt="" class="opin-2" /></a>
-  <a href=""><img src="img/drawing-pin-1.png" alt="" class="opin-3" /></a>
+  <a href="#THTH"><img src="img/drawing-pin-1.png" alt="" class="opin-1" /></a>
+  <a href="#THTH"><img src="img/drawing-pin-1.png" alt="" class="opin-2" /></a>
+  <a href="#THTH"><img src="img/drawing-pin-1.png" alt="" class="opin-3" /></a>
 </main>
 <div class="grandbig">
 <div class="etitlemom">
     <h2 class="etitle">イベント情報</h2>
 </div>
-@foreach ($okinawa as $okinawa)
+@foreach ($okinawa as $event)
 <div class="big">
   <div class="information">
-    <div class="imgholder"><img src="img/okieisa.JPG" alt="" /></div>
+    <div class="imgholder"><img src="img/{{$event->image}}" alt="" /></div>
     <div class="schedule">
-      <p><a href="{{ route('events.show', $okinawa->id) }}">{{$okinawa->title}}</a></p>
+      <p id="THTH"><a href="{{ route('events.show', $event->id) }}">{{$event->title}}</a></p>
       <ul>
-        @foreach ($okinawa->schedules as $schedule)
+        @foreach ($event->schedules as $schedule)
           <li>{{$schedule->time}}</li>
         @endforeach
       </ul>
-      <div class="location">場所:{{$okinawa->place}}</div>
+      <div class="location">場所:{{$event->place}}</div>
     </div>  
 </div>
 </div>
