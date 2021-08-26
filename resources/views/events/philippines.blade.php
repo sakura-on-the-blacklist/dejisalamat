@@ -61,7 +61,7 @@
       <div class="info">
         <div class="imgholder"><img src="/img/PE2-1.JPG" alt="" /></div>
         <div class="schedule">
-          <p><a href="{{ route('philippines.index', $philippines->id) }}">{{$philippines->title}}</a></p>
+          <p><a href="{{ route('events.show', $philippines->id) }}">{{$philippines->title}}</a></p>
           <ul>
             @foreach ($philippines->schedules as $schedule)
               <li>{{$schedule->time}}</li>
