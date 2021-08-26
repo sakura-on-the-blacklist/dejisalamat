@@ -1,15 +1,9 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="{{ asset('css/comment.css')}}">
-    
-    <title>Document</title>
-</head>
-<body>
-
+@extends('layouts.frame')
+@section('content')
+<section>
+    <div class="contactform">
+      <form class="conatactdl">
+       <link rel="stylesheet" href="{{ asset('css/comment.css')}}">
        <form action="{{ route('comment.store',$event->id)}}"  method="POST">
         @csrf
         <h5>みんなの口コミ</h5>
@@ -49,5 +43,7 @@
                     </div>
            </form>
         </div>
-</body>
-</html>
+    </form>
+</div>
+</section>
+@endsection
