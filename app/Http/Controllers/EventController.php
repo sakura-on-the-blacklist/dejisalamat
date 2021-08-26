@@ -22,7 +22,7 @@ class EventController extends Controller
         if($sum == 0){
             $event -> rating = 0;
         }else{
-            $event -> rating = round($sum / count($rating), 1);
+            $event -> rating = round($sum / count($ratings), 1);
         }
 
         return view ('events.show', ['event'=>$event]);
