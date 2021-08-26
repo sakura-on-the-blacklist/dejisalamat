@@ -52,18 +52,11 @@
 </div>
 @foreach ($okinawa as $okinawa)
 <div class="big">
-  <div class="info">
+  <div class="information">
     <div class="imgholder"><img src="img/okieisa.JPG" alt="" /></div>
     <div class="schedule">
-      <p><a href="{{ route('okinawa.index', $okinawa->id) }}">{{$okinawa->title}}</a></p>
+      <p><a href="{{ route('events.show', $okinawa->id) }}">{{$okinawa->title}}</a></p>
       <ul>
-        <li>{{$okinawa->time}}</li>
-        <li>{{$okinawa->time}}</li>
-        <li>{{$okinawa->time}}</li>
-        <li>{{$okinawa->time}}</li>
-      </ul>
-      <div class="location">場所:</div>
-
         @foreach ($okinawa->schedules as $schedule)
           <li>{{$schedule->time}}</li>
         @endforeach
