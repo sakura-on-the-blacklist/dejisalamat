@@ -13,7 +13,7 @@
         <div class="location-reservation">
           <div class="location-reserve">このプランを予約する</div>
           <div class="location-bookmark">お気に入りに登録する</div>
-          <div class="location-rating"></div>
+          <div class="location-rating">{{$event->rating}}</div>
         </div>
       </div>
       <div class="detail-image">
