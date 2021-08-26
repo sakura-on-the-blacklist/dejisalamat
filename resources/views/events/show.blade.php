@@ -10,13 +10,11 @@
     <div class="detail-hero">
       <div class="title-box">
         <div class="location-title">タイトル</div>
-        @foreach($comment_ranks as $comment_rank)
         <div class="location-reservation">
           <div class="location-reserve">このプランを予約する</div>
           <div class="location-bookmark">お気に入りに登録する</div>
-          <div class="location-rating">{{$comment_ranks->rank}}</div>
+          <div class="location-rating">{{$comment->rank}}</div>
         </div>
-        @endforeach
       </div>
       <div class="detail-image">
         <img src="./img/oslob.jpeg" alt="" />
