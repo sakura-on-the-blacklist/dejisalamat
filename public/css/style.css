@@ -461,8 +461,8 @@ footer li:nth-child(5) {
   width: 30%;
 }
 
-.place-review-edit {
-}
+/* .place-review-edit {
+} */
 
 .hamburger {
   display: none;
@@ -803,7 +803,6 @@ footer li:nth-child(5) {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  height: 800px;
 }
 
 .conatactdl {

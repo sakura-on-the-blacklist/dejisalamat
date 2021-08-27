@@ -11,7 +11,7 @@
   </head>
   <body>
     <header>
-      <div class="img"><img src="img/philoki.png" alt=""></div>
+      <div class="img"><img src="/img/philoki.png" alt=""></div>
       <nav>
         <ul class="nav-ul hidden">
           <li><a href="/login">ログイン</a></li>
@@ -26,7 +26,7 @@
     @yield('content')
     <footer>
       <ul>
-        <li><img src="img/transparent.png" alt="" /></li>
+        <li><img src="/img/transparent.png" alt="" /></li>
         <li>
           <ul>
             <li><a href="#">ログイン</a></li>
