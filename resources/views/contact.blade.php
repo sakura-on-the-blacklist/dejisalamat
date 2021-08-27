@@ -13,10 +13,6 @@
             <dd><textarea name="message" class="message"></textarea></dd>
             <button type="submit" class="btn">送信する</button>
         </dl>
-          <div class="attention">
-            <p>※「<span class="required"></span>」とついている項目は必須項目です。<br>※お問い合わせ送信後、2営業日以内に担当者よりご連絡いたします。</p>
-          </form>
-        </div>
     </div>
   </section>
 @endsection
