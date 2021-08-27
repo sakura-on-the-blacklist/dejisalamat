@@ -29,7 +29,6 @@
             <div class="schedule-title">スケジュール</div>
             <div class="time">
               <ul>
-                @foreach ($event->schedules as $schedule)
                   <li>{{$schedule->time}}</li>
                 @endforeach
               </ul>
@@ -45,7 +44,6 @@
           <div class="place-explanation-paragraph"><p>{{$event->description}}</p>
           </div>
         </div>
-        @endforeach
       </div>
       <div class="place-review">
         <div class="place-review-title">口コミ</div>
