@@ -1,8 +1,6 @@
 @extends('layouts.frame')
 @section('content')
 <section>
-    <div class="contactform">
-      <form class="conatactdl">
         <dl>
           <form action="{{ route('contact.store')}}"  method="post">
             @csrf
@@ -19,7 +17,5 @@
         <div class="attention">
           <p>※「<span class="required"></span>」とついている項目は必須項目です。<br>※お問い合わせ送信後、2営業日以内に担当者よりご連絡いたします。</p>
         </div>
-      </form>
-    </div>
   </section>
 @endsection
