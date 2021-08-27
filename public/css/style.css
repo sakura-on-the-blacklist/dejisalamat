@@ -696,6 +696,95 @@ footer li:nth-child(5) {
   }
 }
 
+/* loginはじまり */
+.col-md-7 {
+  margin: 2em;
+  background-image: url(../img/log-sign.png);
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+}
+
+.col-md-8 h2 {
+  font-family: 'Kaisei Opti', serif;
+  margin-bottom: 10px;
+  margin-top: 50px;
+  background-color:rgba(255,255,255,0.5);
+}
+
+.card-header {
+  font-family: 'Kaisei Opti', serif;
+  font-size: 25px;
+  margin-bottom: 10px;
+  background-color:rgba(255,255,255,0.5);
+}
+
+.col-md-8 dt {
+  font-weight: bold;
+  margin-top: 11px;
+}
+
+.col-md-8 input {
+  width: 300px;
+  box-sizing: border-box;
+  padding: .8em;
+  border-radius: 2em;
+  border: 2px solid #aaa;
+  outline: none;
+}
+
+.loginform textarea {
+  width: 300px;
+  box-sizing: border-box;
+  margin: 1em 0;
+  padding: .8em;
+  border-radius: 1em;
+  border: 2px solid #aaa;
+}
+
+
+.form-check {
+  color: #004aad;
+  width: 30%;
+}
+
+.btn-f {
+  text-align: right;
+}
+.btn {
+  color: tomato;
+  background-color:rgba(255,255,255,0.5);
+}
+
+.col-md-8 button {
+  background-color: tomato;
+  color: #fff;
+  font-size: 20px;
+  width: 100px;
+  display: block;
+  text-align: center;
+  border-radius: 5px;
+  border: 3px solid tomato;
+  margin:0 0 0 auto
+}
+
+.col-md-8 button {
+  margin-left: 300px;
+  background-image: none;
+}
+
+.col-md-8 button:hover {
+  background-color: #fff;
+  color: #004aad;
+  cursor: pointer;
+}
+
+.attention {
+  font-size: x-small;
+  background-color:rgba(255,255,255,0.5);
+}
+
+/* loginおわり */
+
 /* contactはじまり */
 .contactform {
   background-image: url(../img/contact.png);
