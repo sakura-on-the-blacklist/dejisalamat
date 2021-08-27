@@ -2,8 +2,8 @@
 
 @section('content')
 <div class="banner"><img class="mySlides" src="/img/O-1.png" /></div>
-<div class="banner"><img class="mySlides" src="img/O-2.png" /></div>
-<div class="banner"><img class="mySlides" src="img/O-3.png" /></div>
+<div class="banner"><img class="mySlides" src="/img/O-2.png" /></div>
+<div class="banner"><img class="mySlides" src="/img/O-3.png" /></div>
 <script src="{{ asset('js/banner.js')}}"></script>
 <div class="box0">
   <div class="box1">
