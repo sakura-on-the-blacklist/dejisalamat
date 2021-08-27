@@ -549,6 +549,7 @@ footer li:nth-child(5) {
   max-width: 720px;
   border:1px solid
 }
+}
 @media screen and (max-width: 480px) {
   .Form {
     margin-top: 40px;
@@ -698,7 +699,7 @@ footer li:nth-child(5) {
 /* contactはじまり */
 .contactform {
   background-image: url(../img/contact.png);
-
+}
 /* topはじまり */
 .main-visual img {
   width: 100vw;
