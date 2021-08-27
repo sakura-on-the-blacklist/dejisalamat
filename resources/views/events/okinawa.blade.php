@@ -2,8 +2,8 @@
 
 @section('content')
 <div class="banner"><img class="mySlides" src="/img/O-1.png" /></div>
-<div class="banner"><img class="mySlides" src="img/O-2.png" /></div>
-<div class="banner"><img class="mySlides" src="img/O-3.png" /></div>
+<div class="banner"><img class="mySlides" src="/img/O-2.png" /></div>
+<div class="banner"><img class="mySlides" src="/img/O-3.png" /></div>
 <script src="{{ asset('js/banner.js')}}"></script>
 <div class="box0">
   <div class="box1">
@@ -42,27 +42,26 @@
 
 <main>
   <img src="img/omap.png" alt="" />
-  <a href=""><img src="img/drawing-pin-1.png" alt="" class="opin-1" /></a>
-  <a href=""><img src="img/drawing-pin-1.png" alt="" class="opin-2" /></a>
-  <a href=""><img src="img/drawing-pin-1.png" alt="" class="opin-3" /></a>
+  <a href="#THTH"><img src="img/drawing-pin-1.png" alt="" class="opin-1" /></a>
+  <a href="#THTH"><img src="img/drawing-pin-1.png" alt="" class="opin-2" /></a>
+  <a href="#THTH"><img src="img/drawing-pin-1.png" alt="" class="opin-3" /></a>
 </main>
 <div class="grandbig">
 <div class="etitlemom">
     <h2 class="etitle">イベント情報</h2>
 </div>
-@foreach ($okinawa as $okinawa)
+@foreach ($okinawa as $event)
 <div class="big">
-  <div class="info">
-    <div class="imgholder"><img src="img/okieisa.JPG" alt="" /></div>
+  <div class="information">
+    <div class="imgholder"><img src="img/{{$event->image}}" alt="" /></div>
     <div class="schedule">
-      <p><a href="{{ route('okinawa.index', $okinawa->id) }}">{{$okinawa->title}}</a></p>
+      <p id="THTH"><a href="{{ route('events.show', $event->id) }}">{{$event->title}}</a></p>
       <ul>
-        <li>{{$okinawa->time}}</li>
-        <li>{{$okinawa->time}}</li>
-        <li>{{$okinawa->time}}</li>
-        <li>{{$okinawa->time}}</li>
+        @foreach ($event->schedules as $schedule)
+          <li>{{$schedule->time}}</li>
+        @endforeach
       </ul>
-      <div class="location">場所:</div>
+      <div class="location">場所:{{$event->place}}</div>
     </div>  
 </div>
 </div>

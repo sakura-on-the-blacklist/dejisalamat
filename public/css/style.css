@@ -18,6 +18,7 @@ html {
   position: relative;
   /* min-height: 315%; */
   overflow-x: hidden;
+  scroll-behavior:smooth;
 }
 
 header {
@@ -137,7 +138,7 @@ main a img {
 /* 沖縄のピン */
 .opin-1 {
   top: 63%;
-  left: 43.4%;
+  left: 44.4%;
 }
 
 .opin-2 {
@@ -147,7 +148,7 @@ main a img {
 
 .opin-3 {
   top: 59%;
-  left: 41.6%;
+  left: 42.6%;
 }
 
 /* イベント情報 */
@@ -163,7 +164,7 @@ main a img {
   flex-direction: column;
 }
 
-.info {
+.information {
   display: flex;
 }
 
@@ -226,18 +227,18 @@ main a img {
   color: #727272;
 }
 
-.info ul {
+.information ul {
   list-style: none;
   position: relative;
 }
 
-.info li {
+.information li {
     list-style: none;
     position: relative;
     font-size: 0.6em;
   }
 
-.info li::before {
+.information li::before {
   position: absolute;
   content: "•";
   left: -25px;
@@ -787,7 +788,7 @@ footer li:nth-child(5) {
 /* contactはじまり */
 .contactform {
   background-image: url(../img/contact.png);
-
+}
 /* topはじまり */
 .main-visual img {
   width: 100vw;
@@ -881,9 +882,6 @@ button:hover {
 }
 /* contactおわり */
 
-  height: auto;
-}
-
 .info1 {
   width: 100%;
   height: auto;
@@ -918,3 +916,20 @@ button:hover {
   opacity: 0.8;
 }
 /* topおわり */
+
+@media (max-width: 600px) {
+  .opin-1 {
+    top: 63%;
+    left: 40.4%;
+  }
+
+  .opin-2 {
+    top: 81.5%;
+    left: 34.5%;
+  }
+
+  .opin-3 {
+    top: 59%;
+    left: 35.6%;
+  }
+}

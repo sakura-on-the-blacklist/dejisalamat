@@ -3,8 +3,8 @@
 @section('content')
 <body>
   <div class="banner"><img class="mySlides" src="/img/P-1.png" /></div>
-    <div class="banner"><img class="mySlides" src="img/P-2.png" /></div>
-    <div class="banner"><img class="mySlides" src="img/P-3.png" /></div>
+    <div class="banner"><img class="mySlides" src="/img/P-2.png" /></div>
+    <div class="banner"><img class="mySlides" src="/img/P-3.png" /></div>
     <script src="{{ asset('js/banner.js')}}"></script>
     <div class="hero-hero">
     <div class="detail-hero">
@@ -13,7 +13,7 @@
         <div class="location-reservation">
           <div class="location-reserve">このプランを予約する</div>
           <div class="location-bookmark">お気に入りに登録する</div>
-          <div class="location-rating"></div>
+          <div class="location-rating">{{$event->rating}}</div>
         </div>
       </div>
       <div class="detail-image">
