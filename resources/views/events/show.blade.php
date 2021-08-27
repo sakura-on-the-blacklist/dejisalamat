@@ -6,7 +6,6 @@
     <div class="banner"><img class="mySlides" src="/img/P-2.png" /></div>
     <div class="banner"><img class="mySlides" src="/img/P-3.png" /></div>
     <script src="{{ asset('js/banner.js')}}"></script>
-    @foreach ($events as $event)
     <div class="hero-hero">
     <div class="detail-hero">
       <div class="title-box">
@@ -30,7 +29,6 @@
             <div class="time">
               <ul>
                   <li>{{$schedule->time}}</li>
-                @endforeach
               </ul>
             </div>
           </div>
