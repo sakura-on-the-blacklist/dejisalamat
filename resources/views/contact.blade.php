@@ -2,6 +2,7 @@
 @section('content')
 <section>
     <div class="contactform">
+      <div class="conatactdl">
         <dl>
           <h1 class="icon">お問い合わせ</h1>
           <form action="{{ route('contact.store',$event->id)}}" method="POST">
@@ -13,6 +14,7 @@
             <dd><textarea name="message" class="message"></textarea></dd>
             <button type="submit" class="btn">送信する</button>
         </dl>
+      </div>
     </div>
   </section>
 @endsection
