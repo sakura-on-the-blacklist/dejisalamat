@@ -41,7 +41,7 @@
         </div>
         <div class="place-explanation">
           <div class="place-explanation-title">説明</div>
-          <div class="place-explanation-paragraph"><p>{{$event->description}}</p>
+          <div class="place-explanation-paragraph"><p>{{$event->explanation}}</p>
           </div>
         </div>
       </div>
