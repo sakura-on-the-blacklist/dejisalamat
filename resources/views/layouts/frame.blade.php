@@ -11,12 +11,12 @@
   </head>
   <body>
     <header>
-      <div class="img"><img src="/img/philoki.png" alt=""></div>
+      <div class="img"><a href="/top"><img src="/img/philoki.png" alt=""></a></div>
       <nav>
         <ul class="nav-ul hidden">
           <li><a href="/login">ログイン</a></li>
-          <li><a href="/login">ログアウト</a></li>
-          <li><a href="/register">新規登録</a></li>
+          <li><a href="#">ログアウト</a></li>
+          <li><a href="/login">新規登録</a></li>
           <li><a href="/contact">お問い合わせ</a></li>
           <li><a href="#">お気に入り</a></li>
         </ul>
@@ -29,10 +29,10 @@
         <li><img src="/img/transparent.png" alt="" /></li>
         <li>
           <ul>
-            <li><a href="#">ログイン</a></li>
+            <li><a href="/login">ログイン</a></li>
             <li><a href="#">ログアウト</a></li>
-            <li><a href="#">新規登録</a></li>
-            <li><a href="#">お問い合わせ</a></li>
+            <li><a href="/login">新規登録</a></li>
+            <li><a href="/contact">お問い合わせ</a></li>
           </ul>
         </li>
         <li>

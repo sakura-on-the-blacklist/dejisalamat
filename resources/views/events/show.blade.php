@@ -11,16 +11,16 @@
       <div class="title-box">
         <div class="location-title">{{$event->title}}</div>
         <div class="location-reservation">
-          <div class="location-reserve">このプランを予約する</div>
+          <div class="location-reserve"><a href="/reservations/create"> このプランを予約する</a></div>
           <div class="location-bookmark">お気に入りに登録する</div>
           <div class="location-rating">{{$event->rating}}</div>
         </div>
       </div>
       <div class="detail-image">
-        <img src="./img/oslob.jpeg" alt="" />
-        <img src="./img/oslob.jpeg" alt="" />
-        <img src="./img/oslob.jpeg" alt="" />
-        <img src="./img/oslob.jpeg" alt="" />
+        <img src="./img/oslob.gif" alt="" />
+        <img src="./img/oslob.gif" alt="" />
+        <img src="./img/oslob.gif" alt="" />
+        <img src="./img/oslob.gif" alt="" />
       </div>
       <div class="schedule-explanation">
         <div class="schedule1">
