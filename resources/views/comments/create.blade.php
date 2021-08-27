@@ -2,7 +2,7 @@
 @section('content')
 <section>
     <div class="contactform">
-      <form class="conatactdl">
+      <div class="conatactdl">
        <link rel="stylesheet" href="{{ asset('css/comment.css')}}">
        <form action="{{ route('comment.store',$event->id)}}"  method="POST">
         @csrf
@@ -41,9 +41,9 @@
                           <input type="submit" value="投稿する">
                       </div>
                     </div>
-           </form>
+        </form>
         </div>
-    </form>
+    </div>
 </div>
 </section>
 @endsection
