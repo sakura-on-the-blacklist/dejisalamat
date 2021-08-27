@@ -9,7 +9,7 @@
     <div class="hero-hero">
     <div class="detail-hero">
       <div class="title-box">
-        <div class="location-title">タイトル</div>
+        <div class="location-title">{{$event->title}}</div>
         <div class="location-reservation">
           <div class="location-reserve">このプランを予約する</div>
           <div class="location-bookmark">お気に入りに登録する</div>
@@ -25,25 +25,23 @@
       <div class="schedule-explanation">
         <div class="schedule1">
           <div class="schedule"> 
-            <div class="schedule-title">schedule</div>
+            <div class="schedule-title">スケジュール</div>
             <div class="time">
               <ul>
-                <li>time1</li>
-                <li>time2</li>
-                <li>time3</li>
+             　　 @foreach ($event->schedules as $schedule)
+                  <li>{{$schedule->time}}</li>
+                  @endforeach
               </ul>
             </div>
           </div>
           <div class="place-nameprice">
-            <div class="place-name">場所</div>
-            <div class="place-price">料金</div>
+            <div class="place-name">場所:{{$event->place}}</div>
+            <div class="place-price">料金:{{$event->price}}</div>
           </div>
         </div>
         <div class="place-explanation">
           <div class="place-explanation-title">説明</div>
-          <div class="place-explanation-paragraph"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum aliquid
-            commodi, eaque mollitia provident quas corrupti saepe cum fugiat
-            dolores, accusamus exercitationem odio, iusto nesciunt!</p>
+          <div class="place-explanation-paragraph"><p>{{$event->explanation}}</p>
           </div>
         </div>
       </div>
