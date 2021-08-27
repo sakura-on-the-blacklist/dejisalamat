@@ -28,7 +28,7 @@
           <ul>
             <li><a href="/login">ログイン</a></li>
             <li><a href="#">ログアウト</a></li>
-            <li><a href="/login">新規登録</a></li>
+            <li><a href="/register">新規登録</a></li>
             <li><a href="/contact">お問い合わせ</a></li>
           </ul>
         </li>
