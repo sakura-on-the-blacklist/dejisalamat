@@ -28,7 +28,9 @@
             <div class="schedule-title">スケジュール</div>
             <div class="time">
               <ul>
+             　　 @foreach ($event->schedules as $schedule)
                   <li>{{$schedule->time}}</li>
+                  @endforeach
               </ul>
             </div>
           </div>
