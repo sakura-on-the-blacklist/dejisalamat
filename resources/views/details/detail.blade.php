@@ -4,8 +4,8 @@
   
 <body>
   <div class="banner"><img class="mySlides" src="/img/P-1.png" /></div>
-    <div class="banner"><img class="mySlides" src="img/P-2.png" /></div>
-    <div class="banner"><img class="mySlides" src="img/P-3.png" /></div>
+    <div class="banner"><img class="mySlides" src="/img/P-2.png" /></div>
+    <div class="banner"><img class="mySlides" src="/img/P-3.png" /></div>
     <script src="{{ asset('js/banner.js')}}"></script>
     <div class="hero-hero">
     <div class="detail-hero">
