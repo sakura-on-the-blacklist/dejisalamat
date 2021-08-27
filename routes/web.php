@@ -13,6 +13,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+
 Route::get('/', function () {
     return view('welcome');
 });
@@ -38,9 +39,13 @@ Route::get('/top', function () {
     return view('top');
 });
 
+Route::post('/contact','ContactController@store')->name('contact.store');
+
 Route::get('/contact', function () {
-    return view('contact');
+    return view('contact.create');
 });
+
+// Route::get('/contact','ContactController@create')->name('contact.create');
 
 Auth::routes();
 

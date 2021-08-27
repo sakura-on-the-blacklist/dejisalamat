@@ -550,6 +550,7 @@ footer li:nth-child(5) {
   max-width: 720px;
   border:1px solid
 }
+}
 @media screen and (max-width: 480px) {
   .Form {
     margin-top: 40px;
